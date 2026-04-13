@@ -98,7 +98,11 @@ main {
 }
 
 /* collection section styles */
+.collection{
+    margin-top: 50px;
+}
 .collection .card-container {
+    margin-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
@@ -195,5 +199,9 @@ main {
     .collection .card-container{
         grid-template-columns: 1fr;
         justify-items: center;
+     }
+     .collection > h1{
+        font-size: 16px;
+        font-weight: 600;
      }
 }
