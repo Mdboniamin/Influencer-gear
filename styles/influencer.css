@@ -7,6 +7,10 @@ nav{
     display: flex;
     justify-content: space-between;
     margin: 5rem 7.5rem;
+    align-items: center;
+}
+.nav .menu{
+    display: none;
 }
 .nav .title{
     font-size: 1.5rem;
@@ -19,4 +23,20 @@ nav{
 .nav-link{
     display: flex;
     gap:34px;
+}
+
+/* responsive mobile */
+@media screen and (max-width: 576px) {
+    nav{
+        margin: 35px 16px 22px 16px;
+    }
+    .nav .menu{
+        display: block;
+    }
+    .nav-link{
+        display: none;
+    }
+    .nav .cart{
+        display: block;
+    }
 }
