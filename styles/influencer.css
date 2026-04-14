@@ -3,7 +3,16 @@
 * {
     font-family: "Poppins", sans-serif;
 }
-
+/* shared styles */
+.btn-primary {
+    background-color: #E02C6D;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+}
 /* nav styles */
 nav {
     display: flex;
@@ -80,13 +89,10 @@ main {
     height: auto;
 }
 
+
+
 .landing .content .btn-primary {
-    background-color: #E02C6D;
-    color: white;
-    border: none;
     border-radius: 41px;
-    padding: 10px 20px;
-    cursor: pointer;
 }
 
 /* sponsor section styles */
@@ -98,9 +104,11 @@ main {
 }
 
 /* collection section styles */
-.collection{
+.collection {
     margin-top: 50px;
+    margin-bottom: 100px;
 }
+
 .collection .card-container {
     margin-top: 20px;
     display: grid;
@@ -156,6 +164,28 @@ main {
     padding-right: auto;
 }
 
+.collection button {
+    background-color: white;
+    margin-top: 50px;
+    margin-right: 10px;
+    color: #E02C6D;
+    border: none;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.collection .btn-container {
+    display: flex;
+    justify-content: flex-end;
+}
+/* featured section styles */
+.featured{
+    display: flex;
+    gap: 96px;
+    margin-bottom: 100px;
+}
+
 /* responsive mobile */
 @media screen and (max-width: 576px) {
 
@@ -196,12 +226,14 @@ main {
         gap: 10px;
         padding: 0;
     }
-    .collection .card-container{
+
+    .collection .card-container {
         grid-template-columns: 1fr;
         justify-items: center;
-     }
-     .collection > h1{
+    }
+
+    .collection>h1 {
         font-size: 16px;
         font-weight: 600;
-     }
+    }
 }
