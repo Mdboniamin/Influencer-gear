@@ -186,9 +186,30 @@ main {
     margin-bottom: 100px;
 }
 .featured .description{
+    font-size: 16px;
+    font-weight: 700;
     max-width: 501px;
+    color: #6c6c6c;
 }
-
+/* footer styles */
+footer{
+    background-color: #0a0826;
+    text-align: center;
+    color: white;
+    padding: 50px 0;
+}
+footer .title{
+    font-size: 24px;
+    font-weight: 700;
+}
+footer .cpright{
+    font-size: 14px;
+    /* font-weight: 700; */
+    color: #D9DBE1;
+}
+footer .social img{
+    margin-right: 16px;
+}
 /* responsive mobile */
 @media screen and (max-width: 576px) {
 
@@ -201,13 +222,10 @@ main {
         display: block;
     }
 
-    .nav-link {
+    .nav-link .hd {
         display: none;
     }
 
-    .nav .cart {
-        display: block;
-    }
 
     .landing {
         flex-direction: column-reverse;
@@ -245,10 +263,8 @@ main {
     .featured{
         flex-direction: column-reverse;
         margin-bottom: 50px;
-    }
-    .featured .content{
         text-align: center;
-        gap: 0px;
-        
+        gap: 30px;
+        margin: 0 15px;
     }
 }
