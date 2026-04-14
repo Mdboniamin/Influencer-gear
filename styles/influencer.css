@@ -185,6 +185,9 @@ main {
     gap: 96px;
     margin-bottom: 100px;
 }
+.featured .description{
+    max-width: 501px;
+}
 
 /* responsive mobile */
 @media screen and (max-width: 576px) {
@@ -235,5 +238,17 @@ main {
     .collection>h1 {
         font-size: 16px;
         font-weight: 600;
+    }
+    .collection{
+        margin-bottom: 10px;
+    }
+    .featured{
+        flex-direction: column-reverse;
+        margin-bottom: 50px;
+    }
+    .featured .content{
+        text-align: center;
+        gap: 0px;
+        
     }
 }
